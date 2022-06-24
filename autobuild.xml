@@ -12,7 +12,7 @@
         <key>license</key>
         <string>lgpl</string>
         <key>license_file</key>
-        <string>LICENSES/SDL.txt</string>
+        <string>LICENSES/SDL2.txt</string>
         <key>name</key>
         <string>SDL2</string>
         <key>platforms</key>
@@ -22,16 +22,16 @@
             <key>archive</key>
             <map>
               <key>hash</key>
-              <string>fcaa4d806d8066a7a08f993bbde9e17d</string>
+              <string>1e706ac2c4a8f245d653d58ca8fc5232</string>
               <key>url</key>
-              <string>jf://packages/linux64/SDL2-2.0.10-linux64_bionic-221732241.tar.bz2</string>
+              <string>jf://packages/linux64/SDL2-2.0.20-linux64_bionic-221752234.tar.bz2</string>
             </map>
             <key>name</key>
             <string>linux64</string>
           </map>
         </map>
         <key>version</key>
-        <string>2.0.10</string>
+        <string>2.0.20</string>
       </map>
     </map>
     <key>package_description</key>
