@@ -22,9 +22,9 @@
             <key>archive</key>
             <map>
               <key>hash</key>
-              <string>1e706ac2c4a8f245d653d58ca8fc5232</string>
+              <string>f9d5a7fd8575cf7c864472e7509e6277</string>
               <key>url</key>
-              <string>jf://packages/linux64/SDL2-2.0.20-linux64_bionic-221752234.tar.bz2</string>
+              <string>http://erebus//dev/fractal/pkg/SDL2-2.0.20-linux64-20220910.tar.bz2</string>
             </map>
             <key>name</key>
             <string>linux64</string>
@@ -45,7 +45,7 @@
       <key>license</key>
       <string>BSD</string>
       <key>license_file</key>
-      <string>LICENSES/libndofdev.txt</string>
+      <string>LICENSES/libndofdev_sdl2.txt</string>
       <key>name</key>
       <string>open-libndofdev_sdl2</string>
       <key>platforms</key>
@@ -75,8 +75,8 @@
           </map>
           <key>manifest</key>
           <array>
-            <string>include/*.h</string>
-            <string>LICENSES/libndofdev.txt</string>
+            <string>include/*</string>
+            <string>LICENSES/libndofdev_sdl2.txt</string>
             <string>lib/release/*.a</string>
           </array>
           <key>name</key>
