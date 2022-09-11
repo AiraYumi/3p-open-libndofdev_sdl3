@@ -37,7 +37,7 @@
     <key>package_description</key>
     <map>
       <key>canonical_repo</key>
-      <string>https://bitbucket.org/nickyd/3p-open-libndofdev</string>
+      <string>https://github.com/slviewer-3p/3p-open-libndofdev_sdl2</string>
       <key>copyright</key>
       <string>Copyright (c) 2008, Jan Ciger (jan.ciger (at) gmail.com)</string>
       <key>description</key>
