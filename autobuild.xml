@@ -3,7 +3,7 @@
 <map>
     <key>installables</key>
     <map>
-      <key>SDL2</key>
+      <key>SDL3</key>
       <map>
         <key>copyright</key>
         <string>Copyright (C) 1997-2012 Sam Lantinga</string>
@@ -14,7 +14,7 @@
         <key>license_file</key>
         <string>LICENSES/SDL2.txt</string>
         <key>name</key>
-        <string>SDL2</string>
+        <string>SDL3</string>
         <key>platforms</key>
         <map>
           <key>linux64</key>
@@ -22,16 +22,16 @@
             <key>archive</key>
             <map>
               <key>hash</key>
-              <string>f9d5a7fd8575cf7c864472e7509e6277</string>
+              <string>25472ab1fce6528b530ff854fd9c82ed</string>
               <key>url</key>
-              <string>http://erebus//dev/fractal/pkg/SDL2-2.0.20-linux64-20220910.tar.bz2</string>
+              <string>SDL3-3.0.0-linux64_glibc-2.37-232672123.tar.bz2</string>
             </map>
             <key>name</key>
             <string>linux64</string>
           </map>
         </map>
         <key>version</key>
-        <string>2.0.20</string>
+        <string>3.0.0</string>
       </map>
     </map>
     <key>package_description</key>
