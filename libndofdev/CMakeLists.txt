@@ -11,7 +11,7 @@ SET(EXECUTABLE_OUTPUT_PATH "bin" )
 
 if (${CMAKE_SYSTEM_NAME} MATCHES "Linux")
 
-    ADD_DEFINITIONS("-pipe -DUSE_SDL2")
+    ADD_DEFINITIONS("-pipe -DUSE_SDL3")
 
     set(libndofdev_SOURCE_FILES
         ndofdev.c
@@ -30,8 +30,8 @@ endif()
 set_source_files_properties(${libndofdev_HEADER_FILES} PROPERTIES HEADER_FILE_ONLY TRUE)
 list(APPEND libndofdev_SOURCE_FILES ${libndofdev_HEADER_FILES})
 
-add_library (ndofdev_sdl2 STATIC ${libndofdev_SOURCE_FILES})
+add_library (ndofdev_sdl3 STATIC ${libndofdev_SOURCE_FILES})
 
-target_link_libraries(ndofdev_sdl2
+target_link_libraries(ndofdev_sdl3
     ${libndofdev_LIBRARIES}
 )

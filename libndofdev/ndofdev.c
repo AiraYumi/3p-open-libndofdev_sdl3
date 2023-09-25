@@ -48,8 +48,8 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-#ifdef USE_SDL2
-#include <SDL2/SDL.h>
+#ifdef USE_SDL3
+#include <SDL3/SDL.h>
 #else
 #include <SDL/SDL.h>
 #endif
@@ -255,7 +255,7 @@ int ndof_init_first(NDOF_Device *in_out_dev, void *param)
             in_out_dev->valid = 1;
             in_out_dev->axes_max = 32767;
             in_out_dev->axes_min = -32767;
-#ifdef USE_SDL2
+#ifdef USE_SDL3
             strncpy(in_out_dev->product, SDL_JoystickName(j), 255);
 #else
             strncpy(in_out_dev->product, SDL_JoystickName(0), 255);

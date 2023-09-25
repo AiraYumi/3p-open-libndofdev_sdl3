@@ -57,10 +57,10 @@ case "$AUTOBUILD_PLATFORM" in
             -DWORD_SIZE:STRING=$AUTOBUILD_ADDRSIZE \
             -DCMAKE_BUILD_TYPE:STRING=Release
         make
-		mkdir -p include/SDL2/
-		cp -a ../libndofdev/include/* include/SDL2/
+		mkdir -p include/SDL3/
+		cp -a ../libndofdev/include/* include/SDL3/
 
 		mkdir -p LICENSES/
-		cp -a ../libndofdev/LICENSES/libndofdev.txt LICENSES/libndofdev_sdl2.txt
+		cp -a ../libndofdev/LICENSES/libndofdev.txt LICENSES/libndofdev_sdl3.txt
 		;;
 esac
