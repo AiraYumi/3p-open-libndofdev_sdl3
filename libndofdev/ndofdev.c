@@ -246,17 +246,17 @@ int ndof_init_first(NDOF_Device *in_out_dev, void *param)
 
     } else {
         // SpaceNavigator not found, use SDL Joystick
-        SDL_Joystick *j = SDL_JoystickOpen(0);
+        SDL_Joystick *j = SDL_OpenJoystick(0);
         if(j)
         {
-            in_out_dev->axes_count = SDL_JoystickNumAxes(j);
-            in_out_dev->btn_count = SDL_JoystickNumButtons(j);
+            in_out_dev->axes_count = SDL_GetNumJoystickAxes(j);
+            in_out_dev->btn_count = SDL_GetNumJoystickButtons(j);
             in_out_dev->absolute = 0; // always relative on Linux
             in_out_dev->valid = 1;
             in_out_dev->axes_max = 32767;
             in_out_dev->axes_min = -32767;
 #ifdef USE_SDL3
-            strncpy(in_out_dev->product, SDL_JoystickName(j), 255);
+            strncpy(in_out_dev->product, SDL_GetJoystickName(j), 255);
 #else
             strncpy(in_out_dev->product, SDL_JoystickName(0), 255);
 #endif
@@ -312,17 +312,17 @@ void ndof_update(NDOF_Device *in_dev)
 
     if(priv->USE_SDL)
     {
-        SDL_JoystickUpdate();
+        SDL_UpdateJoysticks();
         SDL_Joystick *j = priv->j;
 
         for(i = 0; i < in_dev->axes_count; i++)
         {
-            in_dev->axes[i] = (int) (SDL_JoystickGetAxis(j, i));
+            in_dev->axes[i] = (int) (SDL_GetJoystickAxis(j, i));
         }
 
         for(i = 0; i < in_dev->btn_count; i++)
         {
-            in_dev->buttons[i] = SDL_JoystickGetButton(j, i);
+            in_dev->buttons[i] = SDL_GetJoystickButton(j, i);
         }
     } else {
         // update SpaceNavigator
