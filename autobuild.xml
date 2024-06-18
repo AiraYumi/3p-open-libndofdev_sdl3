@@ -16,9 +16,11 @@
             <key>archive</key>
             <map>
               <key>hash</key>
-              <string>62acb6553fd2d0f0f0ceac81a7b7ad39</string>
+              <string>788375b5f6e8c6bf1b48cee3cceb257909814634</string>
+              <key>hash_algorithm</key>
+              <string>sha1</string>
               <key>url</key>
-              <string>http://erebus/dev/viewer/pkg/SDL3-3.0.0-linux64_glibc-2.37-232681759.tar.bz2</string>
+              <string>https://github.com/AiraYumi/3p-sdl3/releases/download/v3.0.0/SDL3-3.0.0-linux64-9557158608.tar.zst</string>
             </map>
             <key>name</key>
             <string>linux64</string>
