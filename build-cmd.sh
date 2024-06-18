@@ -51,7 +51,7 @@ case "$AUTOBUILD_PLATFORM" in
 		exit 1
 		;;
     linux64)
-        opts="-DTARGET_OS_LINUX ${AUTOBUILD_GCC_ARCH} $LL_BUILD_RELEASE"
+        opts="-DTARGET_OS_LINUX $LL_BUILD_RELEASE"
         cmake ../libndofdev -DCMAKE_CXX_FLAGS="$opts" -DCMAKE_C_FLAGS="$opts" \
             -DCMAKE_OSX_ARCHITECTURES="$AUTOBUILD_CONFIGURE_ARCH" \
             -DWORD_SIZE:STRING=$AUTOBUILD_ADDRSIZE \
